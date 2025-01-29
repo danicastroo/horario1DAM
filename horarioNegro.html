@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horario - DAM1</title>
+    <link rel="icon" href="https://scontent-mad1-1.xx.fbcdn.net/v/t39.30808-6/302505951_516286500501707_3450037676252027922_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=BQU_Qg4Ulo8Q7kNvgHHJTgV&_nc_zt=23&_nc_ht=scontent-mad1-1.xx&_nc_gid=AK-n30hUygt9aRnu2MtQGFi&oh=00_AYDtWCJDpTBWYM84oPcu6SW07FM8OfbkVRBLQCHakLn9ow&oe=679FC07B" type="image/webp"/>
+    <!--DANI CASTRO-->
+    <style>
+      body {
+        font-family: "Poppins", Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #2c3e50; /* Fondo más oscuro */
+        color: white; /* Color del texto en blanco para mejorar el contraste */
+      }
+      h1 {
+        text-align: center;
+        color: white;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+      }
+      h1 img {
+        height: 50px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        background-color: #34495e; /* Fondo de la tabla más oscuro */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      th,
+      td {
+        padding: 15px;
+        text-align: center;
+        color: white; /* Color del texto en la tabla en blanco para mejor contraste */
+      }
+      th {
+        background-color: #1abc9c; /* Color del encabezado */
+      }
+      td {
+        background-color: #34495e; /* Color de fondo de las celdas */
+        border-bottom: 1px solid #2c3e50;
+      }
+      tr:nth-child(even) td {
+        background-color: #3a4b60;
+      }
+      tr:hover td {
+        background-color: #405a78;
+      }
+      .recreo {
+        background-color: #6277be;
+        color: white;
+        font-weight: bold;
+      }
+      .highlight {
+        background-color: #aac9d5 !important; /* Cambiado a un azul claro suave */
+      }
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 1.5rem;
+          flex-direction: column;
+        }
+        h1 img {
+          height: 40px;
+          margin-bottom: 10px;
+        }
+        table {
+          border-radius: 0;
+          box-shadow: none;
+          overflow: auto;
+          display: block;
+          white-space: nowrap;
+        }
+        th,
+        td {
+          display: table-cell;
+          padding: 10px;
+        }
+        th {
+          display: table-cell;
+        }
+        tr {
+          display: table-row;
+          margin-bottom: 10px;
+        }
+      }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>
+      <img
+        src="https://www.iesfranciscodelosrios.es/wp-content/uploads/2023/01/logo-menu-ies-rios-2-480x51.webp"
+        alt="Logo IES Francisco de los Rios"
+      />
+      Horario de Clases
+    </h1>
+    <table>
+      <!--DÍAS DE LA SEMANA-->
+      <tr>
+        <th>Horas</th>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miércoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+      </tr>
+      <!--PRIMERA HORA-->
+      <tr>
+        <td>1º</td>
+        <td class="asignatura">BBDD</td>
+        <td class="asignatura">Lenguaje de Marcas</td>
+        <td class="asignatura">BBDD</td>
+        <td class="asignatura" rowspan="2">Programación</td>
+        <td class="asignatura">Programación</td>
+      </tr>
+      <!--SEGUNDA HORA-->
+      <tr>
+        <td>2º</td>
+        <td class="asignatura">FOL</td>
+        <td class="asignatura">BBDD</td>
+        <td class="asignatura">Sistemas Informáticos</td>
+        <td class="asignatura">Entornos de Desarrollo</td>
+      </tr>
+      <!--TERCERA HORA-->
+      <tr>
+        <td>3º</td>
+        <td class="asignatura">Programación</td>
+        <td class="asignatura">Programación</td>
+        <td class="asignatura">FOL</td>
+        <td class="asignatura">BBDD</td>
+        <td class="asignatura">Sistemas Informáticos</td>
+      </tr>
+      <!--RECREO-->
+      <tr>
+        <th colspan="6" class="recreo">RECREO</th>
+      </tr>
+      <!--CUARTA HORA-->
+      <tr>
+        <td>4º</td>
+        <td class="asignatura">Sostenibilidad</td>
+        <td class="asignatura">Programación</td>
+        <td class="asignatura" rowspan="2">Programación</td>
+        <td class="asignatura">BBDD</td>
+        <td class="asignatura">BBDD</td>
+      </tr>
+      <!--QUINTA HORA-->
+      <tr>
+        <td>5º</td>
+        <td class="asignatura">Lenguaje de Marcas</td>
+        <td class="asignatura" rowspan="2">Sistemas Informáticos</td>
+        <td class="asignatura">Entornos de Desarrollo</td>
+        <td class="asignatura">FOL</td>
+      </tr>
+      <!--SEXTA HORA-->
+      <tr>
+        <td>6º</td>
+        <td class="asignatura">Sistemas Informáticos</td>
+        <td class="asignatura">Entornos de Desarrollo</td>
+        <td class="asignatura">Digitalización Aplicada</td>
+        <td class="asignatura">Lenguaje de Marcas</td>
+      </tr>
+    </table>
+    <script>
+      document.querySelectorAll(".asignatura").forEach((item) => {
+        item.addEventListener("mouseover", (event) => {
+          const asignatura = event.target.textContent;
+          document.querySelectorAll(".asignatura").forEach((cell) => {
+            if (cell.textContent === asignatura) {
+              cell.classList.add("highlight");
+            }
+          });
+        });
+        item.addEventListener("mouseout", (event) => {
+          const asignatura = event.target.textContent;
+          document.querySelectorAll(".asignatura").forEach((cell) => {
+            if (cell.textContent === asignatura) {
+              cell.classList.remove("highlight");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
