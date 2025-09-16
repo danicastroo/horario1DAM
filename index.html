@@ -61,6 +61,17 @@
       .highlight {
         background-color: #aac9d5 !important;
       }
+      .leyenda {
+        margin-top: 20px;
+        background: #34495e;
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+      .leyenda strong {
+        color: #1abc9c;
+      }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
   </head>
@@ -83,18 +94,16 @@
       <tr>
         <td>08:30 - 09:30</td>
         <td>IPPE</td>
-        <td>DEINT</td>
+        <td rowspan="2">DEINT</td>
         <td>IPPE</td>
-        <td>DWE</td>
+        <td rowspan="2">DWE</td>
         <td>CIBE</td>
       </tr>
       <!-- 09:30 - 10:30 -->
       <tr>
         <td>09:30 - 10:30</td>
         <td>DEINT</td>
-        <td>DEINT</td>
-        <td>DWE</td>
-        <td>DWE</td>
+        <td rowspan="2">DWE</td>
         <td>PROY</td>
       </tr>
       <!-- 10:30 - 11:30 -->
@@ -102,7 +111,6 @@
         <td>10:30 - 11:30</td>
         <td>CIBE</td>
         <td>DAW</td>
-        <td></td>
         <td>DAW</td>
         <td>DEINT</td>
       </tr>
@@ -113,8 +121,8 @@
       <!-- 12:00 - 13:00 -->
       <tr>
         <td>12:00 - 13:00</td>
-        <td>DWE</td>
-        <td>DWE</td>
+        <td rowspan="3">DWE</td>
+        <td rowspan="2">DWE</td>
         <td>PROY</td>
         <td>INGP</td>
         <td>IPPE</td>
@@ -122,22 +130,29 @@
       <!-- 13:00 - 14:00 -->
       <tr>
         <td>13:00 - 14:00</td>
-        <td>INGP</td>
-        <td></td>
-        <td>DWE</td>
-        <td>DWE</td>
+        <td rowspan="2">DWE</td>
+        <td rowspan="2">DWE</td>
         <td>DWE</td>
       </tr>
       <!-- 14:00 - 15:00 -->
       <tr>
         <td>14:00 - 15:00</td>
-        <td>DWE</td>
-        <td>DWE</td>
         <td>DEINT</td>
-        <td>DWE</td>
         <td>DWE</td>
       </tr>
     </table>
+
+    <!-- Leyenda -->
+    <div class="leyenda">
+      <p><strong>IPPE</strong> → Implantación de Proyectos y Programas Educativos (Profesor: García)</p>
+      <p><strong>DEINT</strong> → Desarrollo de Interfaces (Profesora: López)</p>
+      <p><strong>DWE</strong> → Desarrollo Web en Entorno Servidor (Profesor: Martín)</p>
+      <p><strong>CIBE</strong> → Ciberseguridad (Profesora: Sánchez)</p>
+      <p><strong>DAW</strong> → Desarrollo de Aplicaciones Web (Profesor: Rodríguez)</p>
+      <p><strong>PROY</strong> → Proyecto Integrado (Profesor: Fernández)</p>
+      <p><strong>INGP</strong> → Inglés Profesional (Profesor: Romero)</p>
+    </div>
+
     <script>
       document.querySelectorAll("td").forEach((item) => {
         item.addEventListener("mouseover", (event) => {
